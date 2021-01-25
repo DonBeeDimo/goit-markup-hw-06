@@ -13,24 +13,7 @@
 </head>
 <body class="page">
 
-    <form class="js-speaker-form">
-        <label for="name">Имя</label>
-        <input type="text" name="name" id="name" />
-
-        <label for="tel">Телефон</label>
-        <input type="tel" name="tel" id="tel" />
-
-        <label for="mail">Почта</label>
-        <input type="email" name="mail" id="mail" />
-
-        <label for="comment">Комментарий</label>
-        <textarea name="comment" id="comment" rows="10"></textarea>
-
-        <input type="checkbox" name="contract" value="conditions" id="conditions" />
-        <label for="conditions">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-
-        <button type="submit">Отправить</button>
-    </form>
+   
 
     <!--Шапка сайта-->
     <header class="head">
@@ -381,12 +364,80 @@
                     </li>
                 </ul>
             </div>
+        <div class="footer-modal">
+            <div class="modal-title">
+                <h3 class="email-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+            </div>
+            
+            <div class="footer-form">
+                <input type="email" name="mail" placeholder="E-mail"></input>
+                <button type="submit" class="subscribe">Подписаться
+                    <svg class="telegram">
+                        <use href="./images/symbol-defs.svg#icon-telegrammin"></use>
+                    </svg>
+                </button>
+               
+            </div>
+            
+        </div>    
+            
         </div>
     </div>
  </footer>
 
  <div class="backdrop is-hidden" data-backdrop>
     <div class="modal">
+        <form class="form js-speaker-form">
+            
+            <div class="modal-title">
+                <b>Оставьте свои данные, мы вам перезвоним</b>
+            </div>
+
+            <div class="form-field">
+                <label for="name">Имя</label>
+               <div class="modal-container">
+                    <input type="text" name="name" id="name" />
+                    <svg class="modal-icon">
+                        <use href="./images/symbol-defs.svg#icon-namemin"></use>
+                    </svg>
+               </div>
+            </div>
+        
+            <div class="form-field">
+                <label for="tel">Телефон</label>
+                <div class="modal-container">
+                    <input type="tel" name="tel" id="tel" />
+                    <svg class="modal-icon">
+                        <use href="./images/symbol-defs.svg#icon-trubkamin"></use>
+                    </svg>
+                </div>
+            </div>
+        
+            <div class="form-field">
+                <label for="mail">Почта</label>
+                <div class="modal-container">
+                    <input type="email" name="mail" id="mail" />
+                    <svg class="modal-icon">
+                        <use href="./images/symbol-defs.svg#icon-konvertmin"></use>
+                    </svg>
+                </div>
+            </div>
+        
+            <div class="form-field">
+                <label for="comment">Комментарий</label>
+                <textarea class="comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+            </div>
+        
+            <label class="form-contract">
+                <input class="checkbox" type="checkbox" name="contract" value="conditions"  />
+                <span class="checkbox-icon"></span>
+                Соглашаюсь с рассылкой и принимаю <a href="/" class="link-contract">Условия договора</a>
+            </label>
+        
+            <div class="form-field">
+                <button type="submit" class="send">Отправить</button>
+            </div>
+        </form>
         <button class="modal-btn" data-close-modal>
             <svg class="close-icon" width="11" height="11">
                 <use href="./images/symbol-defs.svg#icon-vectormin"></use>
