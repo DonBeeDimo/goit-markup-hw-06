@@ -564,6 +564,30 @@ b {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.subscribe {
+  position: relative;
+  display: flex;
+
+  padding: 10px 0 10px 29px;
+  border-radius: 4px;
+
+  min-width: 200px;
+  border: none;
+
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}
+
 .telegram {
   margin-left: 10px;
   margin-right: 28px;
@@ -593,7 +617,9 @@ b {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+
   margin-bottom: 30px;
+  
 }
 
 .form-contract input {
@@ -625,20 +651,11 @@ b {
 .checkbox:checked + .checkbox-icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-  background-image: url('../images/iconcheckminimal.svg');
+  background-image: url("../images/iconcheckminimal.svg");
   background-size: contain;
   background-origin: border-box;
+
 }
-/* .checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  position: absolute;
-} */
-
-/* .form-contract input[type='checkbox'] {
-} */
 
 .link-contract {
   color: var(--accent-color);
